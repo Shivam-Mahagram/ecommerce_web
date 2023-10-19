@@ -1,0 +1,25 @@
+.main {
+    text-align: center;
+    margin-top: 20px;
+  
+}
+.select {
+    margin-left: 10px;
+    display: flex;
+}
+.state{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    flex: 1;
+  
+}
+
+.city{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    flex: 1;
+  
+}
