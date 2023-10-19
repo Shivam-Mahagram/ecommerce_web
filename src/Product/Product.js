@@ -42,8 +42,8 @@ const Product = () => {
                                         <div className="card-body">
                                             <h6 className="card-title">{item.title}</h6>
                                             <p className='card-text'>&#8377; {item.price}</p>
-                                            {/* <p className="card-text">{item.description}</p> */}
-                                            <a href="#" className="btn btn-primary">Go somewhere</a>
+                                           
+                                            <button className="btn btn-primary">Go somewhere</button>
                                         </div>
                                     </div>
                                 </div>

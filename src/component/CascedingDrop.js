@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 import { stateData } from './StateData'
 import './cascading.css'
@@ -44,7 +44,7 @@ const CascedingDrop = () => {
 
                     </select>
                 </div>
-                
+
             </div>
         </>
     )

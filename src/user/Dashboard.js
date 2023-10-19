@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
-import { Navbar } from 'reactstrap'
 import { getRequest } from '../config/httpRequest'
 import { apiUrl } from '../config/apiUrl'
 import Product from '../Product/Product'
@@ -9,8 +7,7 @@ import Product from '../Product/Product'
 const Dashboard = () => {
 
     const userInfo = useSelector((state) => state.userInfo)
-    const navigate = useNavigate()
-
+  
     const [cate, setCate] = useState([])
 
     useEffect(() => {
@@ -28,11 +25,6 @@ const Dashboard = () => {
         })
     }
 
-    const handlelogout = () => {
-
-        localStorage.removeItem('token')
-        // navigate('/')
-    }
 
     console.log(cate)
     return (
@@ -42,8 +34,6 @@ const Dashboard = () => {
 
 
             </div>
-
-            {/* <button className='btn btn-lg btn-danger' onClick={handlelogout}>Logout</button> */}
 
             <div className='container'>
 

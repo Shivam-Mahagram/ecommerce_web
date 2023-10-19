@@ -19,7 +19,7 @@ const Cart = () => {
     }
 
     useEffect(() => {
-        if (cartItem.length == 0) {
+        if (cartItem.length === 0) {
             navigate('/dashboard')
         }
     }, [cartItem])

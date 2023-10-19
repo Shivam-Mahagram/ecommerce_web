@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { getRequest } from '../config/httpRequest'
 import { apiUrl } from '../config/apiUrl'
 import ImgCarousel from './ImgCarousel'
@@ -15,13 +15,11 @@ const ProductDes = () => {
     
 
     const dispatch = useDispatch()
-    const navigate = useNavigate()
 
     useEffect(() => {
         getProdDetails()
     }, [])
 
-    const ratings = [2, 3, 4, 5];
 
     const getProdDetails = () => {
         const url = apiUrl.product.singleProduct
