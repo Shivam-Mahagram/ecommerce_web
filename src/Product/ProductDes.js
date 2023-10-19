@@ -16,20 +16,22 @@ const ProductDes = () => {
 
     const dispatch = useDispatch()
 
-    useEffect(() => {
-        getProdDetails()
-    }, [])
-
-
     const getProdDetails = () => {
         const url = apiUrl.product.singleProduct
         getRequest(`${url}/${id}`).then((data) => {
-          
             setProduct(data)
         }).catch((err) => {
             console.log(err)
         })
     }
+
+    useEffect(() => {
+        getProdDetails()
+         // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
+
+    
 
     const addToCart = (product1) => {
 

@@ -22,6 +22,8 @@ const Cart = () => {
         if (cartItem.length === 0) {
             navigate('/dashboard')
         }
+
+         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [cartItem])
 
     return (
