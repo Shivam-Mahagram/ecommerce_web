@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 import { getRequest } from '../config/httpRequest'
 import { apiUrl } from '../config/apiUrl'
@@ -13,7 +13,6 @@ const Dashboard = () => {
     useEffect(() => {
         getAllCate()
     }, [])
-
 
     const getAllCate = () => {
         const url = apiUrl.category.allCategoryList
