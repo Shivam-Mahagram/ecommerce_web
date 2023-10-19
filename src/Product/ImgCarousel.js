@@ -11,14 +11,14 @@ const ImgCarousel = ({ images }) => {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,       // Enable automatic sliding
-        autoplaySpeed: 2000, 
+        autoplaySpeed: 2000,
     };
 
     return (
         <Slider {...settings}>
             {images && images?.map((image, index) => (
                 <div key={index}>
-                    <img src={image} alt={`Image ${index}`}  width='70%' />
+                    <img src={image} alt='' width='70%' />
                 </div>
             ))}
         </Slider>
